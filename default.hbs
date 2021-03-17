@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{@site.locale}}">
+<html class="dark-mode" lang="{{@site.locale}}">
 <head>
 
     {{!-- Basic meta - advanced meta is output with {ghost_head} below --}}
@@ -47,12 +47,6 @@
                         <a class="gh-social-twitter" href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>
                     {{/if}}
                 </div>
-
-                {{#unless @member}}
-                    <a class="gh-head-button" href="#/portal">Subscribe</a>
-                {{else}}
-                    <a class="gh-head-button" href="#/portal/account">Account</a>
-                {{/unless}}
             </div>
         </nav>
     </header>
